@@ -1,0 +1,36 @@
+{
+  "intents": [
+    {
+      "intent": "HelloIntent"
+    },
+    {
+      "intent": "QuestionIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "MyNameIsIntent",
+      "slots" :
+      [
+      {
+          "name": "firstname",
+          "type": "AMAZON.US_FIRST_NAME"
+      }
+      ]
+    },
+    {
+      "intent": "WhatIsMyNameIntent"
+    }
+  ]
+}
+
+
+
+HelloIntent hello
+QuestionIntent question
+
+MyNameIsIntent {firstname}
+MyNameIsIntent my name is {firstname}
+
+WhatIsMyNameIntent ask me what my name is
